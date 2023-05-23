@@ -1,0 +1,313 @@
+.slider {
+  padding-top: 20px;
+  padding-bottom: 60px;
+
+  &--flat-white {
+    background-color: $background-flat-white;
+  }
+
+  &--lavender-latte {
+    background-color: $background-lavender-latte;
+  }
+
+  &--espresso {
+    background-color: $background-espresso;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 0;
+    background-color: $base-white;
+
+    &--flat-white {
+      background-image: linear-gradient($background-flat-white 0 640px, $base-white 640px 100%);
+    }
+
+    &--lavender-latte {
+      background-image: linear-gradient($background-lavender-latte 0 640px, $base-white 640px 100%);
+    }
+
+    &--espresso {
+      background-image: linear-gradient($background-espresso 0 640px, $base-white 640px 100%);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 84px;
+    background-image: none;
+
+    &--flat-white {
+      background-color: $background-flat-white;
+    }
+
+    &--lavender-latte {
+      background-color: $background-lavender-latte;
+    }
+
+    &--espresso {
+      background-color: $background-espresso;
+    }
+  }
+}
+
+.slider__button {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 100%;
+  border: none;
+  fill: $base-primary;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
+
+  &--prev {
+    left: 0;
+
+    &:hover,
+    &:focus {
+      background-image: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    &:active {
+      background-image: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+    }
+  }
+
+  &--next {
+    right: 0;
+
+    &:hover,
+    &:focus {
+      background-image: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    &:active {
+      background-image: linear-gradient(270deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 640px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+  }
+}
+
+.slider__button--prev svg {
+  rotate: 180deg;
+}
+
+.slider__button.swiper-button-disabled {
+  fill: $base-grey;
+  background-image: none;
+  cursor: auto;
+}
+
+.new-drinks-list {
+  list-style: none;
+  z-index: auto;
+}
+
+.new-drinks-list__item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    column-gap: 30px;
+  }
+}
+
+.new-drinks-list__image-wrapper {
+  line-height: 0;
+
+  @media (min-width: $desktop-width) {
+    flex-shrink: 0;
+    padding-left: 25px;
+  }
+}
+
+.new-drinks-list__image {
+  width: 280px;
+  height: 280px;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 476px;
+    height: 476px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+.new-drinks-list___info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+    order: 0;
+    text-align: left;
+  }
+}
+
+.new-drinks-list__badge {
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  color: $base-primary;
+  text-transform: uppercase;
+}
+
+.new-drinks-list__name {
+  margin-bottom: 10px;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: $base-black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+    font-size: 56px;
+    line-height: 80px;
+  }
+}
+
+.new-drinks-list__description {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $base-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.new-drinks-list__buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.new-drinks-list__price {
+  line-height: 32px;
+
+  &::after {
+    content: "\20BD";
+  }
+
+  &--old {
+    font-size: 16px;
+    font-weight: 400;
+    color: $base-primary;
+    text-decoration: line-through;
+  }
+
+  &--current {
+    margin-left: 6px;
+    font-size: 20px;
+    font-weight: 600;
+    color: $base-black;
+  }
+}
+
+.new-drinks-list__order-link {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin-left: 20px;
+  border-radius: 4px;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $base-white;
+  background-color: $base-primary;
+
+  &:hover,
+  &:focus {
+    background-color: $alt-primary-lighter;
+  }
+
+  &:active {
+    background-color: $alt-primary-darker;
+  }
+
+  &:disabled {
+    background-color: $base-grey;
+  }
+}
+
+.indicators-list {
+  display: none;
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    bottom: 70px;
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    width: 100%;
+  }
+}
+
+.indicators-list__button {
+  display: block;
+  width: 62px;
+  height: 4px;
+  border: none;
+  background-color: $base-white;
+  cursor: pointer;
+
+  &:hover:not(&--active),
+  &:focus:not(&--active) {
+    background-color: $alt-primary;
+  }
+
+  &--active {
+    background-color: $base-primary;
+    cursor: auto;
+  }
+}

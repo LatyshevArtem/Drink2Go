@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="index-page-body">
@@ -74,6 +75,92 @@
         </div>
       </div>
     </header>
+
+    <main>
+      <section class="swiper slider slider--flat-white">
+        <h2 class="visually-hidden">Новые напитки: Декаф Флэт Уайт, Лавандовый Латте, Тройной Эспрессо</h2>
+        <button class="slider__button slider__button--prev" type="button">
+          <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.28339 0L5 1.32082L13.4332 10L5 18.6792L6.28339 20L16 10L6.28339 0Z"/>
+          </svg>
+        </button>
+        <ul class="swiper-wrapper slider__new-drinks-list new-drinks-list">
+          <li class="swiper-slide new-drinks-list__item">
+            <figure class="new-drinks-list__item-content">
+              <picture class="new-drinks-list__image-wrapper">
+                <source media="(min-width: 1440px)" sizes="600px" srcset="images/slider/desktop/flat-white@2x.webp 2x, images/slider/desktop/flat-white.webp" type="image/webp">
+                <source media="(min-width: 1440px)" sizes="600px" srcset="images/slider/desktop/flat-white@2x.png 2x, images/slider/desktop/flat-white.png" type="image/png">
+                <source media="(min-width: 768px)" sizes="476px" srcset="images/slider/tablet/flat-white@2x.webp 2x, images/slider/tablet/flat-white.webp" type="image/webp">
+                <source media="(min-width: 768px)" sizes="476px" srcset="images/slider/tablet/flat-white@2x.png 2x, images/slider/tablet/flat-white.png" type="image/png">
+                <source sizes="280px" srcset="images/slider/mobile/flat-white@2x.webp 2x, images/slider/mobile/flat-white.webp" type="image/webp">
+                <img class="new-drinks-list__image" src="images/slider/mobile/flat-white.png" srcset="images/slider/mobile/flat-white@2x.png 2x" alt="Жестянная банка с белой наклейкой">
+              </picture>
+              <figcaption class="new-drinks-list___info">
+                <small class="new-drinks-list__badge">Новинка!</small>
+                <h3 class="new-drinks-list__name">Декаф Флэт Уайт</h3>
+                <p class="new-drinks-list__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                <div class="new-drinks-list__buy">
+                  <span class="new-drinks-list__price new-drinks-list__price--old">295</span>
+                  <span class="new-drinks-list__price new-drinks-list__price--current">225</span>
+                  <a class="new-drinks-list__order-link" href="404.html">Заказать</a>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="swiper-slide new-drinks-list__item">
+            <figure class="new-drinks-list__item-content">
+              <picture class="new-drinks-list__image-wrapper">
+                <source media="(min-width: 1440px)" sizes="600px" srcset="images/slider/desktop/lavender-latte@2x.webp 2x, images/slider/desktop/lavender-latte.webp" type="image/webp">
+                <source media="(min-width: 1440px)" sizes="600px" srcset="images/slider/desktop/lavender-latte@2x.png 2x, images/slider/desktop/lavender-latte.png" type="image/png">
+                <source media="(min-width: 768px)" sizes="476px" srcset="images/slider/tablet/lavender-latte@2x.webp 2x, images/slider/tablet/lavender-latte.webp" type="image/webp">
+                <source media="(min-width: 768px)" sizes="476px" srcset="images/slider/tablet/lavender-latte@2x.png 2x, images/slider/tablet/lavender-latte.png" type="image/png">
+                <source srcset="images/slider/mobile/lavender-latte@2x.webp 2x, images/slider/mobile/lavender-latte.webp" type="image/webp">
+                <img class="new-drinks-list__image" src="images/slider/mobile/lavender-latte.png" srcset="images/slider/mobile/lavender-latte@2x.png 2x" alt="Жестянная банка с белой наклейкой">
+              </picture>
+              <figcaption class="new-drinks-list___info">
+                <small class="new-drinks-list__badge">Новинка!</small>
+                <h3 class="new-drinks-list__name">Лавандовый Латте</h3>
+                <p class="new-drinks-list__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+                <div class="new-drinks-list__buy">
+                  <span class="new-drinks-list__price new-drinks-list__price--old">285</span>
+                  <span class="new-drinks-list__price new-drinks-list__price--current">265</span>
+                  <a class="new-drinks-list__order-link" href="404.html">Заказать</a>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="swiper-slide new-drinks-list__item">
+            <figure class="new-drinks-list__item-content">
+              <picture class="new-drinks-list__image-wrapper">
+                <source media="(min-width: 1440px)" sizes="600px" srcset="images/slider/desktop/espresso@2x.webp 2x,images/slider/desktop/espresso.webp" type="image/webp">
+                <source media="(min-width: 1440px)" sizes="600px" srcset="images/slider/desktop/espresso@2x.png 2x, images/slider/desktop/espresso.png" type="image/png">
+                <source media="(min-width: 768px)" sizes="476px" srcset="images/slider/tablet/espresso@2x.webp 2x, images/slider/tablet/espresso.webp" type="image/webp">
+                <source media="(min-width: 768px)" sizes="476px" srcset="images/slider/tablet/espresso@2x.png 2x, images/slider/tablet/espresso.png" type="image/png">
+                <source srcset="images/slider/mobile/espresso@2x.webp 2x, images/slider/mobile/espresso.webp" type="image/webp">
+                <img class="new-drinks-list__image" src="images/slider/mobile/espresso.png" srcset="images/slider/mobile/espresso@2x.png 2x" alt="Жестянная банка с белой наклейкой">
+              </picture>
+              <figcaption class="new-drinks-list___info">
+                <small class="new-drinks-list__badge">Новинка!</small>
+                <h3 class="new-drinks-list__name">Тройной Эспрессо</h3>
+                <p class="new-drinks-list__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+                <div class="new-drinks-list__buy">
+                  <span class="new-drinks-list__price new-drinks-list__price--old">395</span>
+                  <span class="new-drinks-list__price new-drinks-list__price--current">375</span>
+                  <a class="new-drinks-list__order-link" href="404.html">Заказать</a>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+        <ul class="swiper-pagination slider__indicators-list indicators-list"></ul>
+        <button class="slider__button slider__button--next" type="button">
+          <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.28339 0L5 1.32082L13.4332 10L5 18.6792L6.28339 20L16 10L6.28339 0Z"/>
+          </svg>
+        </button>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script type="module" src="js/index.js"></script>
   </body>
 </html>
